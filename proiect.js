@@ -6,3 +6,7 @@ function capturaSucces(stream)
 {
 	video.srcObject = stream;
 }
+functia capturaInsucces(stream)
+{
+	alert("Nu s-a putut captura");
+}
