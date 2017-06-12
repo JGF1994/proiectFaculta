@@ -10,3 +10,7 @@ functia capturaInsucces(stream)
 {
 	alert("Nu s-a putut captura");
 }
+
+var parametri= {audio: true, video: true};
+navigator.mediaDevices.getUserMedia(parametri).then(capturaSucces).catch(capturaInsucces);
+
