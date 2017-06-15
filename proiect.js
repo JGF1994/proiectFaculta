@@ -21,7 +21,10 @@ function vibreaza()
 {
 	window.navigator.vibrate(200);
 }
-
+function sunetCaptura()
+{
+	sunet=new Audio("sunetcamera");
+}
 function capturaEcran()
 {
 	vibreaza();
