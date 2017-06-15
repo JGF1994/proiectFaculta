@@ -1,6 +1,7 @@
-.butrotund
+.rotund
 {
 		 height:150px;
 		 width:150px;
+		 border-radius: 5%;
 		 border: 1px solid green;
 }

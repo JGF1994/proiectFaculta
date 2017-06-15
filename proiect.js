@@ -1,30 +1,33 @@
-var video = document.getElementById("video");
-video.addEventListener("touchstart",capteaza);
- 
+var video = document.getElementById('livestream');
+if (video)
+	video.addEventListener("touchstart",capturaEcran);
+ else
+	alert("Eroare la captare");
 
 function capturaSucces(stream) 
 {
 	video.srcObject = stream;
 }
-functia capturaInsucces(err)
+function capturaInsucces(err)
 {
 	alert("Nu s-a putut captura");
 }
 
-var parametri = {audio: true, video: true};
+var parametri = {audio : true, video : true};
 
 navigator.mediaDevices.getUserMedia(parametri).then(capturaSucces).catch(capturaInsucces);
 
+function vibreaza()
+{
+	window.navigator.vibrate(200);
+}
 
-function capteaza(){
+function capturaEcran()
+{
 	vibreaza();
 	var c = document.getElementById("canvas");
 	c.width = video.width;
 	c.height = video.height;
 	var ctx = c.getContext("2d");
 	ctx.drawImage(video,0,0,640,480);
-}
-function vibreaza()
-{
-	window.navigator.vibrate(200);
 }
