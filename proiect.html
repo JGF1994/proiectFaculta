@@ -6,14 +6,12 @@
 	
 </head>
 <body>
-<div>
+
 	<video width="640" height="480" autoplay id="livestream"></video>
+	<div class="dropdown">
 	<button type="button" class="rotund" onclick="capturaEcran()">Captura</button>
 	<button type="button" class="rotund" onclick="salvareImagine()">Salvare</button>
-</div>
-	<canvas id="canvas"></canvas>
-
-<div class="dropdown">
+	
   <button class="dropbtn">Alege efect</button>
 	<div class="dropdown-content">
 		<a href="#" onclick="coloreazaBlur()" id="blur">Efect blur</a>
@@ -22,9 +20,13 @@
 		<a href="#" onclick="coloreazaSaturare()" id="saturare">Saturare</a>
 		<a href="#" onclick="coloreazaContrast()" id="contrastul">Saturare</a>
 	</div>
-</div>
-
 	
+	</div>
+	<canvas id="canvas"></canvas>
+
+
+
+	</div>
 	<script type="text/javascript" src="proiect.js"></script>	
 </body>
 </html>

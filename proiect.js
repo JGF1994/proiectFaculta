@@ -101,7 +101,9 @@ function salvareImagine() {
     obiect.dataset.downloadurl = [MIME_TYPE, obiect.download, obiect.href].join(':');
 
     document.body.appendChild(obiect);
+	
     obiect.click();
+	
     document.body.removeChild(obiect);
 }
 
