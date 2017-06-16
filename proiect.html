@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Photographer</title>
+	<title>Colorify</title>
 	<link rel="stylesheet" type="text/css" href="butonrotund.css">
+	
 </head>
 <body>
 
 	<video width="640" height="480" autoplay id="livestream"></video>
 	<canvas id="canvas"></canvas>
-	<button type="button" class="rotund" onclick="capturaEcran()">Captura</button> 
-	<script type="text/javascript" src="proiect.js"></script>
+	
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+	<div class="dropdown-content">
+		<a href="#" onclick="coloreazaBlur()" id="blur">Efect blur</a>
+		<a href="#" onclick="coloreazaAlbNegru()" id="albnegru" >Alb negru</a>
+		<a href="#" onclick="coloreazaSepia()" id="sepia" >Sepia</a>
+		<a href="#" onclick="coloreazaSaturare()" id="saturare">Saturare</a>
+		<a href="#" onclick="coloreazaContrast()" id="contrastul">Saturare</a>
+	</div>
+</div>
+
+	<button type="button" class="rotund" onclick="capturaEcran()">Captura</button>
+	<script type="text/javascript" src="proiect.js"></script>	
 </body>
 </html>

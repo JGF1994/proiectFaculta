@@ -1,6 +1,8 @@
 var video = document.getElementById('livestream');
 var sunet=new Audio("sunet.mp3");
-var optiuneAleasa=new int;
+var optiuneAleasa;
+var imagine=new Image(640,480);
+var ctx;
 
 if (video)
 	video.addEventListener("touchstart",capturaEcran);
@@ -28,25 +30,24 @@ function redaSunet()
 {
 	sunet.play();
 }
-function efectAles()
-{
-	if (document.getElementById('').clicked == true)
-		optiuneAleasa=0;
-	if (document.getElementById('').clicked == true)
-		optiuneAleasa=1;
-	if (document.getElementById('').clicked == true)
-		optiuneAleasa=2;
-	if (document.getElementById('').clicked == true)
-		optiuneAleasa=3;	
-}
 function capturaEcran()
 {
 	vibreaza();
 	redaSunet();
 	var c = document.getElementById("canvas");
-	c.width = video.width;
-	c.height = video.height;
-	var ctx = c.getContext("2d");
-	
+	imagine.width = c.width = video.width;
+	imagine.height = c.height = video.height;
+	ctx = canvas.getContext("2d");
 	ctx.drawImage(video,0,0,640,480);
+	
 }
+function coloreazaBlur()
+{
+	document.getElementById("canvas").className = "efectblur";
+	var c = document.getElementById("canvas");
+	c.width = imagine.width;
+	c.height = imagine.height;
+	ctx = canvas.getContext("2d");
+	ctx.drawImage(imagine,0,0,640,480);
+}
+
