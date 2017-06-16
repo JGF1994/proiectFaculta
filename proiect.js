@@ -18,7 +18,7 @@ function capturaInsucces(err)
 	alert("Nu s-a putut captura");
 }
 
-var parametri = {audio : true, video : true};
+var parametri = {audio : false, video : true};
 
 navigator.mediaDevices.getUserMedia(parametri).then(capturaSucces).catch(capturaInsucces);
 
@@ -85,6 +85,24 @@ function coloreazaContrast()
 	c.height = imagine.height;
 	ctx = canvas.getContext("2d");
 	ctx.drawImage(imagine,0,0,640,480);
+}
+	
+function salvareImagine() {
+
+    var canvasElement = document.getElementById("canvas");
+
+    var MIME_TYPE = "image/png";
+
+    var imgURL = canvasElement.toDataURL(MIME_TYPE);
+
+    var obiect = document.createElement('a');
+    obiect.download = "imagine";
+    obiect.href = imgURL;
+    obiect.dataset.downloadurl = [MIME_TYPE, obiect.download, obiect.href].join(':');
+
+    document.body.appendChild(obiect);
+    obiect.click();
+    document.body.removeChild(obiect);
 }
 
 

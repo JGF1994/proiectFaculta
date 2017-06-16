@@ -1,3 +1,17 @@
+#livestream {
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);	
+}
+#canvas {
+	-moz-transform: scale(-1, 1);
+	-webkit-transform: scale(-1, 1);
+	-o-transform: scale(-1, 1);
+	-ms-transform: scale(-1, 1);
+	transform: scale(-1, 1);	
+}
 .rotund
 {
 		 height:80x;
@@ -26,7 +40,7 @@
 	filter:contrast(120%) brightness(130%)
 }
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #99ccff;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -39,7 +53,6 @@
     display: inline-block;
 }
 
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -49,6 +62,7 @@
     z-index: 1;
 }
 
+
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -56,13 +70,13 @@
     display: block;
 }
 
-
 .dropdown-content a:hover {background-color: #f1f1f1}
+
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #e64d00;
 }
