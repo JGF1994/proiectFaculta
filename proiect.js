@@ -68,3 +68,15 @@ function coloreazaSepia()
 	ctx = canvas.getContext("2d");
 	ctx.drawImage(imagine,0,0,640,480);
 }
+function coloreazaSaturare()
+{
+	document.getElementById("canvas").className = "efectblur";
+	var c = document.getElementById("canvas");
+	c.width = imagine.width;
+	c.height = imagine.height;
+	ctx = canvas.getContext("2d");
+	ctx.drawImage(imagine,0,0,640,480);
+}
+
+
+
