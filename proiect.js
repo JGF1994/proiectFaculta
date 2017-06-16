@@ -50,4 +50,21 @@ function coloreazaBlur()
 	ctx = canvas.getContext("2d");
 	ctx.drawImage(imagine,0,0,640,480);
 }
-
+function coloreazaAlbNegru()
+{
+	document.getElementById("canvas").className = "efectalbnegru";
+	var c = document.getElementById("canvas");
+	c.width = imagine.width;
+	c.height = imagine.height;
+	ctx = canvas.getContext("2d");
+	ctx.drawImage(imagine,0,0,640,480);
+}
+function coloreazaSepia()
+{
+	document.getElementById("canvas").className = "efectsepia";
+	var c = document.getElementById("canvas");
+	c.width = imagine.width;
+	c.height = imagine.height;
+	ctx = canvas.getContext("2d");
+	ctx.drawImage(imagine,0,0,640,480);
+}
